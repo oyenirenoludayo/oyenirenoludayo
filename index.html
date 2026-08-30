@@ -3,14 +3,14 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Oyeniran Oludayo — IT &amp; Telecom Infrastructure Professional</title>
-<meta name="description" content="Portfolio of Oyeniran Oludayo — 15+ years in network engineering, telecom infrastructure, desktop support and quality assurance.">
-<meta property="og:title" content="Oyeniran Oludayo — IT & Telecom Infrastructure Professional">
-<meta property="og:description" content="15+ years in network engineering, telecom infrastructure, desktop support and quality assurance. Résumé and references verifiable on request.">
+<title>Oyeniran Oludayo — Data Evaluator, QA Professional &amp; IT/Telecom Specialist</title>
+<meta name="description" content="Oyeniran Oludayo — 15+ years in IT and telecom infrastructure, now focused on remote data annotation, RLHF evaluation, and quality assurance work.">
+<meta property="og:title" content="Oyeniran Oludayo — Data Evaluator, QA Professional & IT/Telecom Specialist">
+<meta property="og:description" content="15+ years IT/telecom experience, now focused on remote data annotation, RLHF evaluation and quality assurance. Résumé and references verifiable on request.">
 <meta property="og:type" content="profile">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Oyeniran Oludayo — IT & Telecom Infrastructure Professional">
-<meta name="twitter:description" content="15+ years in network engineering, telecom infrastructure, desktop support and quality assurance.">
+<meta name="twitter:title" content="Oyeniran Oludayo — Data Evaluator, QA Professional & IT/Telecom Specialist">
+<meta name="twitter:description" content="15+ years IT/telecom experience, now focused on remote data annotation, RLHF evaluation and quality assurance.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
@@ -223,6 +223,113 @@
   }
   .id-caption .ok{ color:var(--fiber); }
 
+  /* ---------- case studies ---------- */
+  .cs-grid{ display:grid; grid-template-columns:repeat(auto-fit, minmax(280px,1fr)); gap:20px; }
+  .cs-card{
+    background:var(--panel); border:1px solid var(--line); border-radius:6px;
+    padding:26px; display:flex; flex-direction:column; gap:14px;
+  }
+  .cs-tag{ font-family:'IBM Plex Mono', monospace; font-size:11.5px; color:var(--fiber); letter-spacing:0.04em; }
+  .cs-card h3{ font-size:19px; }
+  .cs-card p{ color:var(--text-dim); font-size:14px; margin:0; flex:1; }
+  .cs-meta{ font-family:'IBM Plex Mono', monospace; font-size:12px; color:var(--text-faint); }
+  .cs-open{
+    align-self:flex-start;
+    font-family:'IBM Plex Mono', monospace; font-size:12.5px;
+    color:var(--signal); background:none; border:none; padding:0; cursor:pointer;
+    display:flex; align-items:center; gap:6px;
+  }
+  .cs-open:hover{ color:var(--fiber); }
+
+  .modal-overlay{
+    position:fixed; inset:0; background:rgba(10,13,17,0.78);
+    display:none; align-items:center; justify-content:center;
+    z-index:200; padding:24px;
+  }
+  .modal-overlay.open{ display:flex; }
+  .modal-box{
+    background:var(--panel); border:1px solid var(--line); border-radius:8px;
+    max-width:640px; width:100%; max-height:85vh; overflow-y:auto;
+    padding:36px; position:relative;
+  }
+  .modal-close{
+    position:absolute; top:18px; right:18px;
+    background:none; border:1px solid var(--line); border-radius:4px;
+    color:var(--text-dim); font-family:'IBM Plex Mono', monospace; font-size:13px;
+    padding:4px 10px; cursor:pointer;
+  }
+  .modal-close:hover{ color:var(--signal); border-color:var(--signal); }
+  .modal-box .cs-tag{ margin-bottom:6px; }
+  .modal-box h3{ font-size:23px; margin-bottom:16px; }
+  .modal-meta-row{ display:flex; gap:24px; flex-wrap:wrap; margin-bottom:24px; padding-bottom:20px; border-bottom:1px solid var(--line-soft); }
+  .modal-meta-row div{ font-size:12px; }
+  .modal-meta-row .k{ font-family:'IBM Plex Mono', monospace; color:var(--text-faint); text-transform:uppercase; letter-spacing:0.06em; display:block; margin-bottom:3px; }
+  .modal-meta-row .v{ color:var(--text); font-size:13.5px; }
+  .modal-box h4{
+    font-family:'IBM Plex Mono', monospace; font-size:12px; letter-spacing:0.08em; text-transform:uppercase;
+    color:var(--fiber); margin:22px 0 10px;
+  }
+  .modal-box p{ color:var(--text-dim); font-size:14.5px; margin:0; }
+  .modal-box ol{ margin:0; padding-left:20px; color:var(--text-dim); font-size:14px; }
+  .modal-box ol li{ margin-bottom:9px; }
+  .modal-box ol li::marker{ color:var(--signal); font-family:'IBM Plex Mono', monospace; }
+
+  /* ---------- capabilities blurb ---------- */
+  .cap-blurbs{ display:grid; grid-template-columns:1fr 1fr; gap:24px; margin-bottom:40px; }
+  @media (max-width:700px){ .cap-blurbs{ grid-template-columns:1fr; } }
+  .cap-blurb h4{
+    font-family:'IBM Plex Mono', monospace; font-size:12px; letter-spacing:0.06em; text-transform:uppercase;
+    color:var(--signal); margin-bottom:8px;
+  }
+  .cap-blurb p{ color:var(--text-dim); font-size:14.5px; margin:0; }
+
+  /* ---------- process flow diagram ---------- */
+  .fig-block{ margin:24px 0; }
+  .fig-caption{
+    font-family:'IBM Plex Mono', monospace; font-size:11px; color:var(--text-faint);
+    letter-spacing:0.04em; margin-bottom:10px;
+  }
+  .flow-strip{
+    display:flex; flex-wrap:wrap; align-items:center; gap:0;
+    background:var(--panel-alt); border:1px solid var(--line); border-radius:6px;
+    padding:16px;
+  }
+  .flow-step{
+    font-family:'IBM Plex Mono', monospace; font-size:12px; color:var(--text);
+    background:var(--panel); border:1px solid var(--fiber-dim); border-radius:4px;
+    padding:8px 12px; white-space:nowrap;
+  }
+  .flow-arrow{
+    color:var(--fiber); font-family:'IBM Plex Mono', monospace; font-size:14px;
+    padding:0 8px; flex-shrink:0;
+  }
+  .illustration{
+    margin-top:14px;
+    background:var(--panel-alt);
+    border:1px solid var(--line);
+    border-radius:6px;
+    padding:22px;
+    display:flex; align-items:center; justify-content:center;
+  }
+  .illustration svg{ width:100%; max-width:220px; height:auto; }
+  .illustration-caption{
+    text-align:center; margin-top:8px;
+    font-family:'IBM Plex Mono', monospace; font-size:11px; color:var(--text-faint);
+  }
+
+  .illo-wrap{
+    margin-top:14px;
+    background:var(--panel-alt);
+    border:1px solid var(--line);
+    border-radius:6px;
+    padding:18px;
+  }
+  .illo-wrap svg{ width:100%; height:auto; display:block; }
+  .illo-note{
+    margin-top:8px; font-family:'IBM Plex Mono', monospace; font-size:10.5px;
+    color:var(--text-faint); letter-spacing:0.02em;
+  }
+
   /* ---------- section shell ---------- */
   section{ position:relative; z-index:1; padding:80px 0; border-bottom:1px solid var(--line); }
   .eyebrow{
@@ -361,6 +468,17 @@
 </head>
 <body>
 
+<svg width="0" height="0" style="position:absolute">
+  <defs>
+    <marker id="arrow-fiber" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#52b8a8"></path>
+    </marker>
+    <marker id="arrow-signal" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#e8a33d"></path>
+    </marker>
+  </defs>
+</svg>
+
 <div class="schematic-bg"></div>
 
 <header class="topnav">
@@ -368,6 +486,7 @@
     <div class="brand"><span class="dot"></span>OYENIRAN&nbsp;OLUDAYO</div>
     <nav class="links">
       <a href="#experience">Experience</a>
+      <a href="#casestudies">Case Studies</a>
       <a href="#skills">Systems</a>
       <a href="#credentials">Credentials</a>
       <a href="#verify">Verify</a>
@@ -379,10 +498,13 @@
 <section class="hero">
   <div class="wrap grid2">
     <div>
-      <div class="status-tag"><span class="dot"></span>Status: Operational — 15+ Years Uptime</div>
+      <div style="display:flex; flex-wrap:wrap; gap:10px; margin-bottom:24px;">
+        <div class="status-tag" style="margin-bottom:0;"><span class="dot"></span>Available Now · Remote Ready</div>
+        <div class="status-tag" style="margin-bottom:0;">English — Fluent / Professional</div>
+      </div>
       <h1>Oyeniran<br>Oludayo<span class="last">.</span></h1>
-      <div class="role mono">IT &amp; Telecom Infrastructure Professional</div>
-      <p class="summary">Results-driven engineer who has spent 15+ years keeping networks, systems and lab operations running &mdash; from fiber routes and microwave links across Nigeria to desktop and imaging infrastructure for pharmaceutical operations in New Jersey.</p>
+      <div class="role mono">Data Evaluator · Quality Assurance · IT &amp; Telecom Specialist</div>
+      <p class="summary">Results-driven professional with 15+ years across the USA and Nigeria, pairing hands-on network and infrastructure engineering with structured data annotation, RLHF evaluation, and quality assurance work. Brings engineering precision and independent judgement to high-volume, guideline-based tasks.</p>
       <div class="hero-cta">
         <a class="btn btn-primary" href="mailto:Oyeniranoludayo103@gmail.com">Get in touch</a>
         <a class="btn btn-outline" href="https://www.linkedin.com/in/oyeniran-oludayo-32b93a430/" target="_blank" rel="noopener">View LinkedIn</a>
@@ -390,9 +512,9 @@
       </div>
       <div class="stat-strip">
         <div class="stat"><div class="num">15+</div><div class="lbl">Years in field</div></div>
-        <div class="stat"><div class="num">8</div><div class="lbl">Roles held</div></div>
+        <div class="stat"><div class="num">6</div><div class="lbl">Roles held</div></div>
         <div class="stat"><div class="num">2</div><div class="lbl">Countries — NG / US</div></div>
-        <div class="stat"><div class="num">2018</div><div class="lbl">Current role since</div></div>
+        <div class="stat"><div class="num">Yes</div><div class="lbl">Authorized to work in USA</div></div>
       </div>
     </div>
     <div class="id-panel">
@@ -412,7 +534,7 @@
   <div class="wrap">
     <div class="eyebrow">Route 01</div>
     <h2 class="sec-title">Career Signal Path</h2>
-    <p class="sec-sub">Two decades of infrastructure work traced end to end &mdash; from RF field engineering in Nigeria to desktop and systems support in the U.S., with quality assurance running alongside since 2020.</p>
+    <p class="sec-sub">Two decades of infrastructure and evaluation work traced end to end &mdash; from RF field engineering in Nigeria to desktop support in the U.S., with remote data annotation and QA work running alongside since 2020.</p>
 
     <div class="route">
 
@@ -423,26 +545,28 @@
         </div>
         <div class="node-org">Raritan Pharmaceutical Company — East Brunswick, NJ</div>
         <ul>
-          <li>Deploy and configure desktops, monitors and peripherals across lab operations, ensuring seamless integration.</li>
-          <li>Manage end-to-end cable installations and maintain clean work environments for quality-sensitive pharmaceutical processes.</li>
-          <li>Install and maintain printers, labeling machines and specialized IT hardware critical to lab workflows and compliance.</li>
-          <li>Execute laptop imaging via PXE and precise user data migrations with application consistency.</li>
+          <li>Deploy and configure desktops, monitors and peripherals across pharmaceutical lab operations and compliance-sensitive workflows.</li>
+          <li>Manage end-to-end structured cabling installations and maintain clean environments for quality-critical processes.</li>
+          <li>Install and maintain printers, labelling machines and specialized IT hardware essential to lab operations and regulatory compliance.</li>
+          <li>Execute laptop imaging via PXE and precise user data migrations with full application consistency.</li>
           <li>Run preventative maintenance and component replacement to minimize downtime and extend asset lifespan.</li>
-          <li>Maintain IT asset inventory and provide responsive technical support to the lab operations team.</li>
+          <li>Maintain a comprehensive IT asset inventory and provide responsive, solution-focused technical support.</li>
         </ul>
       </div>
 
       <div class="node branch">
         <div class="node-head">
-          <h3>Quality Assurance &amp; Performance Optimization Specialist</h3>
-          <span class="node-dates">2020 — Present · Concurrent</span>
+          <h3>Quality Assurance &amp; Data Evaluation Specialist</h3>
+          <span class="node-dates">2020 — Present · Remote</span>
         </div>
-        <div class="node-org">Multiple Organizations</div>
+        <div class="node-org">Multiple Organizations — Remote</div>
         <ul>
-          <li>Evaluate and provide human feedback on system performance, content quality and process effectiveness.</li>
-          <li>Conduct human-centered validation and testing against rigorous quality benchmarks.</li>
-          <li>Assess system outputs, identify performance gaps, and deliver structured feedback for continuous improvement.</li>
-          <li>Participate in training methodologies and validation processes that improve reliability and user satisfaction.</li>
+          <li>Evaluate model-generated outputs and system performance for accuracy, relevance, tone and policy compliance, providing structured written feedback.</li>
+          <li>Perform data annotation and labelling tasks including text classification, sentiment tagging, named entity recognition and technical content evaluation.</li>
+          <li>Complete pairwise comparison, search relevance rating and content review tasks across crowdsourcing platforms, maintaining high accuracy scores.</li>
+          <li>Conduct human-centered validation and testing across multiple concurrent project streams.</li>
+          <li>Transcribe audio and video content in verbatim and clean-read formats, meeting strict turnaround and accuracy standards.</li>
+          <li>Apply evolving task rubrics and guidelines with strong independent judgement across all evaluation task types.</li>
         </ul>
       </div>
 
@@ -489,33 +613,383 @@
         </ul>
       </div>
 
-    </div>
+      <div class="node">
+        <div class="node-head">
+          <h3>Assistant Quality Control Officer</h3>
+          <span class="node-dates">1998</span>
+        </div>
+        <div class="node-org">Bentos Pharmaceutical Products Ltd. — Ibadan, Nigeria</div>
+        <ul>
+          <li>Measured raw materials with laboratory precision and participated in controlled drug production processes under regulatory standards.</li>
+          <li>Conducted rigorous quality checks on tablets, syrups and wine products to ensure full compliance with pharmaceutical quality standards.</li>
+        </ul>
+      </div>
 
-    <div class="early-career">
-      <h4>Foundations — Early Career</h4>
-      <div class="early-item">
-        <div class="when">1998</div>
-        <div class="what"><b>Assistant Quality Control Officer</b> — Bentos Pharmaceutical Products Ltd., Ibadan<span>Measured raw materials and ran quality checks on tablets, syrups and wine products against pharmaceutical standards.</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="casestudies">
+  <div class="wrap">
+    <div class="eyebrow">Route 02</div>
+    <h2 class="sec-title">Selected Work, In Depth</h2>
+    <p class="sec-sub">Five projects broken down into how the work actually gets done, each with a process diagram and a slot for real supporting evidence. Click any card to open the full documentation. Content is drawn directly from project notes — nothing here is invented.</p>
+
+    <div class="cs-grid">
+      <div class="cs-card">
+        <div class="cs-tag">case_01 // raritan_pharmaceutical</div>
+        <h3>Lab Systems &amp; Desktop Reliability Support</h3>
+        <p>Ongoing desktop and systems support embedded inside pharmaceutical lab operations, where compliance-sensitive workflows depend on tightly managed hardware.</p>
+        <div class="cs-meta">Apr 2018 — Present · Deployment · Imaging · Maintenance</div>
+        <button class="cs-open" onclick="document.getElementById('modal-cs1').classList.add('open')">open_documentation() →</button>
       </div>
-      <div class="early-item">
-        <div class="when">1998</div>
-        <div class="what"><b>Water Quality Control Specialist</b> — Glory Food and Packaging Company, Ibadan<span>Tested pH, alkalinity, chlorine and hardness; maintained composite filter systems for regulatory compliance.</span></div>
+      <div class="cs-card">
+        <div class="cs-tag">case_02 // remote_data_evaluation</div>
+        <h3>Remote Data Annotation &amp; Model Evaluation</h3>
+        <p>Structured, guideline-driven evaluation and annotation work across remote platforms, applying independent judgement under evolving task rubrics.</p>
+        <div class="cs-meta">2020 — Present · Annotation · Evaluation · QA</div>
+        <button class="cs-open" onclick="document.getElementById('modal-cs2').classList.add('open')">open_documentation() →</button>
       </div>
-      <div class="early-item">
-        <div class="when">NYSC</div>
-        <div class="what"><b>Physics &amp; Mathematics Educator</b> — Community Secondary School, Ezimo-Uno, Enugu State<span>Taught senior-level Physics and Mathematics; developed assessments that tracked student progress.</span></div>
+      <div class="cs-card">
+        <div class="cs-tag">case_03 // pxe_imaging_standardization</div>
+        <h3>PXE Automated Imaging &amp; Data Migration Standardization</h3>
+        <p>Standardizing device provisioning across lab workstations to cut deployment time and eliminate data loss during hardware refreshes.</p>
+        <div class="cs-meta">Raritan Pharmaceutical Company · Imaging · Automation · Data Migration</div>
+        <button class="cs-open" onclick="document.getElementById('modal-cs3').classList.add('open')">open_documentation() →</button>
+      </div>
+      <div class="cs-card">
+        <div class="cs-tag">case_04 // lab_cabling_hardening</div>
+        <h3>Pharmaceutical Lab Cabling Infrastructure &amp; Hardware Hardening</h3>
+        <p>Redesigned physical cabling and deployed lab-grade printing and labeling hardware within compliance-critical zones for audit readiness.</p>
+        <div class="cs-meta">Raritan Pharmaceutical Company · Structured Cabling · Compliance</div>
+        <button class="cs-open" onclick="document.getElementById('modal-cs4').classList.add('open')">open_documentation() →</button>
+      </div>
+      <div class="cs-card">
+        <div class="cs-tag">case_05 // itam_preventive_maintenance</div>
+        <h3>IT Asset Management &amp; Preventive Maintenance Framework</h3>
+        <p>Centralized hardware inventory paired with a proactive maintenance schedule for critical pharmaceutical IT hardware, built to prevent unscheduled downtime.</p>
+        <div class="cs-meta">Raritan Pharmaceutical Company · Asset Management · Preventive Maintenance</div>
+        <button class="cs-open" onclick="document.getElementById('modal-cs5').classList.add('open')">open_documentation() →</button>
       </div>
     </div>
   </div>
 </section>
 
+<div class="modal-overlay" id="modal-cs1" onclick="if(event.target===this)this.classList.remove('open')">
+  <div class="modal-box">
+    <button class="modal-close" onclick="document.getElementById('modal-cs1').classList.remove('open')">close ✕</button>
+    <div class="cs-tag">case_01 // raritan_pharmaceutical</div>
+    <h3>Lab Systems &amp; Desktop Reliability Support</h3>
+    <div class="modal-meta-row">
+      <div><span class="k">Role</span><span class="v">Desktop Support Technician</span></div>
+      <div><span class="k">Timeframe</span><span class="v">April 2018 — Present</span></div>
+      <div><span class="k">Discipline</span><span class="v">Deployment · Imaging · Maintenance</span></div>
+    </div>
+    <h4>Overview</h4>
+    <p>Embedded support for desktop and systems infrastructure across pharmaceutical lab operations, where uptime and compliance-sensitive workflows depend on tightly managed hardware and clean documentation.</p>
+    <h4>Approach</h4>
+    <ol>
+      <li>Deploy and configure desktops, monitors and peripherals for lab teams, prioritizing seamless integration into existing workflows.</li>
+      <li>Manage structured cabling installations end-to-end, keeping work environments clean for quality-critical processes.</li>
+      <li>Execute laptop imaging via PXE and user data migrations, preserving application consistency through hardware transitions.</li>
+      <li>Run preventative maintenance and component replacement on a schedule to minimize unplanned downtime.</li>
+      <li>Maintain a full IT asset inventory and respond to lab operations support requests.</li>
+    </ol>
+
+    <div class="fig-block">
+      <div class="fig-caption">Fig. 1 — Support Cycle (original diagram)</div>
+      <div class="flow-strip">
+        <span class="flow-step">Deploy &amp; Configure</span><span class="flow-arrow">→</span>
+        <span class="flow-step">Structured Cabling</span><span class="flow-arrow">→</span>
+        <span class="flow-step">PXE Imaging</span><span class="flow-arrow">→</span>
+        <span class="flow-step">Preventive Maintenance</span><span class="flow-arrow">→</span>
+        <span class="flow-step">Asset Support</span>
+      </div>
+      <div class="illustration">
+        <svg viewBox="0 0 200 140" xmlns="http://www.w3.org/2000/svg">
+          <rect x="35" y="22" width="90" height="58" rx="4" fill="none" stroke="var(--fiber)" stroke-width="3"/>
+          <rect x="68" y="80" width="24" height="8" fill="var(--fiber)"/>
+          <rect x="55" y="88" width="50" height="6" rx="2" fill="var(--fiber-dim)"/>
+          <line x1="48" y1="38" x2="105" y2="38" stroke="var(--fiber-dim)" stroke-width="3"/>
+          <line x1="48" y1="50" x2="90" y2="50" stroke="var(--fiber-dim)" stroke-width="3"/>
+          <line x1="48" y1="62" x2="100" y2="62" stroke="var(--fiber-dim)" stroke-width="3"/>
+          <circle cx="155" cy="58" r="24" fill="none" stroke="var(--signal)" stroke-width="3"/>
+          <path d="M155 40 v9 M155 67 v9 M137 58 h9 M164 58 h9 M143 46 l6 6 M161 70 l6 6 M143 70 l6 -6 M161 46 l-6 6" stroke="var(--signal)" stroke-width="2.5" stroke-linecap="round"/>
+        </svg>
+      </div>
+      <div class="illustration-caption">Original illustration — desktop deployment &amp; maintenance. Not an actual project photo.</div>
+    </div>
+
+    <h4>Focus Areas</h4>
+    <p>Desktop deployment and imaging, structured cabling, compliance-sensitive lab environments, and asset lifecycle management.</p>
+  </div>
+</div>
+
+<div class="modal-overlay" id="modal-cs2" onclick="if(event.target===this)this.classList.remove('open')">
+  <div class="modal-box">
+    <button class="modal-close" onclick="document.getElementById('modal-cs2').classList.remove('open')">close ✕</button>
+    <div class="cs-tag">case_02 // remote_data_evaluation</div>
+    <h3>Remote Data Annotation &amp; Model Evaluation</h3>
+    <div class="modal-meta-row">
+      <div><span class="k">Role</span><span class="v">Quality Assurance &amp; Data Evaluation Specialist</span></div>
+      <div><span class="k">Timeframe</span><span class="v">2020 — Present · Remote</span></div>
+      <div><span class="k">Discipline</span><span class="v">Annotation · Evaluation · QA</span></div>
+    </div>
+    <h4>Overview</h4>
+    <p>Structured, guideline-driven evaluation and annotation work across multiple remote platforms, applying independent judgement to keep output quality consistent under evolving task rubrics.</p>
+    <h4>Approach</h4>
+    <ol>
+      <li>Evaluate model-generated outputs for accuracy, relevance, tone and policy compliance, writing structured feedback for each assessment.</li>
+      <li>Perform annotation and labelling tasks — text classification, sentiment tagging, named entity recognition — against dataset-specific guidelines.</li>
+      <li>Complete pairwise comparison and search relevance rating tasks across crowdsourcing platforms, maintaining consistent accuracy.</li>
+      <li>Run human-centered validation across multiple concurrent project streams without dropping quality.</li>
+      <li>Transcribe audio and video content to verbatim and clean-read standards inside strict turnaround windows.</li>
+    </ol>
+
+    <div class="fig-block">
+      <div class="fig-caption">Fig. 1 — Evaluation Pipeline (original diagram)</div>
+      <div class="flow-strip">
+        <span class="flow-step">Model Evaluation</span><span class="flow-arrow">→</span>
+        <span class="flow-step">Annotation &amp; Labelling</span><span class="flow-arrow">→</span>
+        <span class="flow-step">Pairwise / Relevance Rating</span><span class="flow-arrow">→</span>
+        <span class="flow-step">Human Validation</span><span class="flow-arrow">→</span>
+        <span class="flow-step">Transcription</span>
+      </div>
+      <div class="illustration">
+        <svg viewBox="0 0 200 140" xmlns="http://www.w3.org/2000/svg">
+          <rect x="28" y="26" width="105" height="80" rx="6" fill="none" stroke="var(--fiber)" stroke-width="3"/>
+          <line x1="42" y1="46" x2="118" y2="46" stroke="var(--fiber-dim)" stroke-width="4"/>
+          <line x1="42" y1="62" x2="95" y2="62" stroke="var(--fiber-dim)" stroke-width="4"/>
+          <line x1="42" y1="78" x2="108" y2="78" stroke="var(--fiber-dim)" stroke-width="4"/>
+          <line x1="42" y1="94" x2="85" y2="94" stroke="var(--fiber-dim)" stroke-width="4"/>
+          <circle cx="158" cy="60" r="26" fill="none" stroke="var(--signal)" stroke-width="2.5" opacity="0.5"/>
+          <path d="M145 60 l9 9 l19 -19" stroke="var(--signal)" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </div>
+      <div class="illustration-caption">Original illustration — annotation &amp; evaluation workflow. Not an actual platform screenshot.</div>
+    </div>
+
+    <h4>Focus Areas</h4>
+    <p>RLHF-style evaluation, dataset quality review, guideline-based judgement calls, and high-volume transcription accuracy.</p>
+  </div>
+</div>
+
+<div class="modal-overlay" id="modal-cs3" onclick="if(event.target===this)this.classList.remove('open')">
+  <div class="modal-box">
+    <button class="modal-close" onclick="document.getElementById('modal-cs3').classList.remove('open')">close ✕</button>
+    <div class="cs-tag">case_03 // pxe_imaging_standardization</div>
+    <h3>PXE Automated Imaging &amp; Data Migration Standardization</h3>
+    <div class="modal-meta-row">
+      <div><span class="k">Role</span><span class="v">Desktop Support Technician</span></div>
+      <div><span class="k">Context</span><span class="v">Raritan Pharmaceutical Company</span></div>
+      <div><span class="k">Discipline</span><span class="v">Imaging · Automation · Data Migration</span></div>
+    </div>
+    <h4>Overview</h4>
+    <p>Streamlined device provisioning across lab workstations to reduce deployment times and eliminate data loss during hardware refreshes.</p>
+    <h4>Approach</h4>
+    <ol>
+      <li><b>Image architecture</b> — built a standardized, generalized Windows image containing core pharmaceutical utility software, security agents and network configurations using SCCM / Microsoft Endpoint Configuration Manager (MECM).</li>
+      <li><b>PXE network setup</b> — configured DHCP option tags (66/67) and IP helpers across network switches to route lab subnets to the PXE boot server securely.</li>
+      <li><b>Data migration pipeline</b> — developed automated USMT (User State Migration Tool) XML scripts to capture user profiles, application settings and local lab configuration files to an encrypted network share prior to re-imaging.</li>
+      <li><b>Validation &amp; deployment</b> — performed PXE boot deployments on target hardware, executed state restoration, verified application checksums and validated user permissions.</li>
+      <li><b>Documentation &amp; artifacts</b> — produced a Standard Operating Procedure for PXE boot troubleshooting, USMT XML migration templates, and a pre-deployment hardware verification checklist.</li>
+    </ol>
+
+    <div class="fig-block">
+      <div class="fig-caption">Fig. 1 — Imaging &amp; Migration Pipeline (original diagram)</div>
+      <div class="flow-strip">
+        <span class="flow-step">Image Architecture</span><span class="flow-arrow">→</span>
+        <span class="flow-step">PXE Network Setup</span><span class="flow-arrow">→</span>
+        <span class="flow-step">Data Migration</span><span class="flow-arrow">→</span>
+        <span class="flow-step">Validation &amp; Deployment</span><span class="flow-arrow">→</span>
+        <span class="flow-step">Documentation</span>
+      </div>
+      <div class="illustration">
+        <svg viewBox="0 0 200 140" xmlns="http://www.w3.org/2000/svg">
+          <rect x="18" y="30" width="52" height="72" rx="4" fill="none" stroke="var(--fiber)" stroke-width="3"/>
+          <line x1="28" y1="45" x2="60" y2="45" stroke="var(--fiber-dim)" stroke-width="3"/>
+          <line x1="28" y1="57" x2="60" y2="57" stroke="var(--fiber-dim)" stroke-width="3"/>
+          <line x1="28" y1="69" x2="60" y2="69" stroke="var(--fiber-dim)" stroke-width="3"/>
+          <line x1="28" y1="81" x2="60" y2="81" stroke="var(--fiber-dim)" stroke-width="3"/>
+          <defs>
+            <marker id="arrowhead" markerWidth="8" markerHeight="8" refX="5" refY="3" orient="auto">
+              <path d="M0,0 L6,3 L0,6 z" fill="var(--signal)"/>
+            </marker>
+          </defs>
+          <line x1="76" y1="66" x2="118" y2="66" stroke="var(--signal)" stroke-width="3" marker-end="url(#arrowhead)"/>
+          <rect x="128" y="46" width="58" height="38" rx="4" fill="none" stroke="var(--fiber)" stroke-width="3"/>
+          <rect x="142" y="90" width="30" height="6" rx="2" fill="var(--fiber-dim)"/>
+        </svg>
+      </div>
+      <div class="illustration-caption">Original illustration — PXE boot &amp; image deployment. Not an actual SCCM console screenshot.</div>
+    </div>
+
+    <h4>Focus Areas</h4>
+    <p>SCCM/MECM image management, PXE and DHCP network configuration, USMT-based data migration, deployment validation, and SOP documentation for repeatable rollout.</p>
+  </div>
+</div>
+
+<div class="modal-overlay" id="modal-cs4" onclick="if(event.target===this)this.classList.remove('open')">
+  <div class="modal-box">
+    <button class="modal-close" onclick="document.getElementById('modal-cs4').classList.remove('open')">close ✕</button>
+    <div class="cs-tag">case_04 // lab_cabling_hardening</div>
+    <h3>Pharmaceutical Lab Cabling Infrastructure &amp; Hardware Hardening</h3>
+    <div class="modal-meta-row">
+      <div><span class="k">Role</span><span class="v">Desktop Support Technician</span></div>
+      <div><span class="k">Context</span><span class="v">Raritan Pharmaceutical Company</span></div>
+      <div><span class="k">Discipline</span><span class="v">Structured Cabling · Hardware Deployment · Compliance</span></div>
+    </div>
+    <h4>Overview</h4>
+    <p>Redesigned physical cabling and deployed lab-grade printing and labeling hardware within compliance-critical zones to ensure operational cleanliness and audit readiness.</p>
+    <h4>Approach</h4>
+    <ol>
+      <li><b>Site assessment &amp; mapping</b> — conducted a physical audit of lab workstations, cleanrooms and testing bays to map structured cabling paths, network drop capacity and power infrastructure.</li>
+      <li><b>Structured cabling deployment</b> — installed Cat6a cabling terminating in patch panels, using color-coded patch cords to separate lab-critical from standard administrative networks; secured runs with drop-ceiling trays and high-density, wipeable cable management raceways.</li>
+      <li><b>Lab hardware integration</b> — positioned, assembled and configured industrial thermal label printers (Zebra) and specialized analytical instrument controllers; applied static IP configurations and established print server queues with restricted access controls.</li>
+      <li><b>Environmental hardening</b> — installed protective enclosures and cable seals around connections to meet lab sanitization protocols.</li>
+      <li><b>Documentation &amp; artifacts</b> — produced a physical network topology map, a cable labeling scheme register, and a Hardware Installation Compliance Protocol document for cleanroom environments.</li>
+    </ol>
+
+    <div class="fig-block">
+      <div class="fig-caption">Fig. 1 — Deployment Sequence (original diagram)</div>
+      <div class="flow-strip">
+        <span class="flow-step">Site Assessment</span><span class="flow-arrow">→</span>
+        <span class="flow-step">Structured Cabling</span><span class="flow-arrow">→</span>
+        <span class="flow-step">Hardware Integration</span><span class="flow-arrow">→</span>
+        <span class="flow-step">Environmental Hardening</span><span class="flow-arrow">→</span>
+        <span class="flow-step">Documentation</span>
+      </div>
+      <div class="illustration">
+        <svg viewBox="0 0 200 140" xmlns="http://www.w3.org/2000/svg">
+          <rect x="25" y="35" width="150" height="30" rx="3" fill="none" stroke="var(--fiber)" stroke-width="3"/>
+          <g stroke="var(--signal)" stroke-width="2">
+            <rect x="35" y="43" width="12" height="14"/>
+            <rect x="55" y="43" width="12" height="14"/>
+            <rect x="75" y="43" width="12" height="14"/>
+            <rect x="95" y="43" width="12" height="14"/>
+            <rect x="115" y="43" width="12" height="14"/>
+            <rect x="135" y="43" width="12" height="14"/>
+            <rect x="155" y="43" width="12" height="14"/>
+          </g>
+          <path d="M41 57 q-5 30 35 35" stroke="var(--fiber-dim)" stroke-width="2" fill="none"/>
+          <path d="M81 57 q0 22 50 32" stroke="var(--fiber-dim)" stroke-width="2" fill="none"/>
+          <path d="M121 57 q5 14 15 28" stroke="var(--fiber-dim)" stroke-width="2" fill="none"/>
+          <path d="M161 57 q10 8 5 25" stroke="var(--fiber-dim)" stroke-width="2" fill="none"/>
+        </svg>
+      </div>
+      <div class="illustration-caption">Original illustration — structured cabling &amp; patch panel layout. Not an actual site photo.</div>
+    </div>
+
+    <h4>Focus Areas</h4>
+    <p>Cat6a structured cabling, cleanroom-compliant hardware deployment, Zebra thermal printer and instrument controller integration, static IP/print server configuration, and compliance documentation.</p>
+  </div>
+</div>
+
+<div class="modal-overlay" id="modal-cs5" onclick="if(event.target===this)this.classList.remove('open')">
+  <div class="modal-box">
+    <button class="modal-close" onclick="document.getElementById('modal-cs5').classList.remove('open')">close ✕</button>
+    <div class="cs-tag">case_05 // itam_preventive_maintenance</div>
+    <h3>IT Asset Management &amp; Preventive Maintenance Framework</h3>
+    <div class="modal-meta-row">
+      <div><span class="k">Role</span><span class="v">Desktop Support Technician</span></div>
+      <div><span class="k">Context</span><span class="v">Raritan Pharmaceutical Company</span></div>
+      <div><span class="k">Discipline</span><span class="v">Asset Management · Preventive Maintenance · Lifecycle Tracking</span></div>
+    </div>
+    <h4>Overview</h4>
+    <p>Established a centralized hardware inventory system paired with a proactive maintenance schedule for critical pharmaceutical IT hardware to prevent unscheduled downtime.</p>
+    <h4>Approach</h4>
+    <ol>
+      <li><b>Inventory baseline &amp; tagging</b> — performed a full sweep of desktop computers, monitors, specialized lab interfaces and printers; affixed barcode/asset tags and logged serial numbers, MAC addresses, warranty status and lab zone assignments into an ITSM platform (e.g., ServiceNow).</li>
+      <li><b>Maintenance protocol design</b> — created a recurring preventive maintenance schedule (quarterly/semi-annually) prioritizing high-utilization lab computers and thermal printers.</li>
+      <li><b>Component replacement execution</b> — cleaned dust filters, inspected thermal compounds, replaced degrading hardware components (RAM, storage drives, power supplies), and calibrated label printer sensors.</li>
+      <li><b>Lifecycle tracking</b> — logged all maintenance events, component upgrades and retirements within the ITSM database to track asset health trends and plan hardware refresh cycles.</li>
+      <li><b>Documentation &amp; artifacts</b> — produced an IT Asset Lifecycle SOP, a Preventive Maintenance Checklist for lab workstations, and a Monthly Asset Health &amp; Component Replacement Log template.</li>
+    </ol>
+
+    <div class="fig-block">
+      <div class="fig-caption">Fig. 1 — Maintenance Cycle (original diagram · recurring quarterly/semi-annually)</div>
+      <div class="flow-strip">
+        <span class="flow-step">Inventory &amp; Tagging</span><span class="flow-arrow">→</span>
+        <span class="flow-step">Maintenance Protocol</span><span class="flow-arrow">→</span>
+        <span class="flow-step">Component Replacement</span><span class="flow-arrow">→</span>
+        <span class="flow-step">Lifecycle Tracking</span><span class="flow-arrow">↻</span>
+      </div>
+      <div class="illustration">
+        <svg viewBox="0 0 200 140" xmlns="http://www.w3.org/2000/svg">
+          <rect x="30" y="18" width="80" height="104" rx="6" fill="none" stroke="var(--fiber)" stroke-width="3"/>
+          <path d="M44 44 l7 7 l14 -14" stroke="var(--signal)" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          <line x1="72" y1="47" x2="98" y2="47" stroke="var(--fiber-dim)" stroke-width="3"/>
+          <path d="M44 68 l7 7 l14 -14" stroke="var(--signal)" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          <line x1="72" y1="71" x2="98" y2="71" stroke="var(--fiber-dim)" stroke-width="3"/>
+          <path d="M44 92 l7 7 l14 -14" stroke="var(--signal)" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          <line x1="72" y1="95" x2="98" y2="95" stroke="var(--fiber-dim)" stroke-width="3"/>
+          <circle cx="150" cy="68" r="22" fill="none" stroke="var(--signal)" stroke-width="3"/>
+          <path d="M150 46 v8 M150 82 v8 M128 68 h8 M164 68 h8 M133 51 l5.5 5.5 M161.5 79.5 l5.5 5.5 M133 85 l5.5 -5.5 M161.5 56.5 l-5.5 5.5" stroke="var(--signal)" stroke-width="2.5" stroke-linecap="round"/>
+        </svg>
+      </div>
+      <div class="illustration-caption">Original illustration — asset lifecycle &amp; preventive maintenance. Not an actual ServiceNow screenshot.</div>
+    </div>
+
+    <h4>Focus Areas</h4>
+    <p>ITSM/ServiceNow-based asset tracking, preventive maintenance scheduling, component-level hardware repair, and lifecycle documentation.</p>
+  </div>
+</div>
+
 <section id="skills">
   <div class="wrap">
-    <div class="eyebrow">Route 02</div>
-    <h2 class="sec-title">Systems &amp; Technical Range</h2>
-    <p class="sec-sub">Spanning the physical and the digital layer — from RF and fiber in the field to desktop imaging and quality systems in the lab.</p>
+    <div class="eyebrow">Route 03</div>
+    <h2 class="sec-title">Data Annotation, QA &amp; Technical Range</h2>
+    <p class="sec-sub">A dual-track skill set: structured data evaluation and annotation work paired with 15+ years of hands-on network and infrastructure engineering.</p>
+
+    <div class="cap-blurbs">
+      <div class="cap-blurb">
+        <h4>Evaluation &amp; Annotation</h4>
+        <p>Guideline-based data annotation, model output evaluation and RLHF-style feedback across text, audio and video — applying independent judgement to keep quality consistent under evolving rubrics.</p>
+      </div>
+      <div class="cap-blurb">
+        <h4>Field &amp; Systems Engineering</h4>
+        <p>Hands-on network, fiber and desktop infrastructure work spanning carrier-grade telecom deployments in Nigeria to compliance-sensitive lab systems support in the U.S.</p>
+      </div>
+    </div>
 
     <div class="spec-grid">
+      <div class="spec-card">
+        <h4>Core Competencies</h4>
+        <div class="tag-row">
+          <span class="tag">Data Annotation &amp; Evaluation</span>
+          <span class="tag">QA &amp; Validation</span>
+          <span class="tag">Content Review &amp; Rating</span>
+          <span class="tag">Prompt &amp; Response Evaluation</span>
+          <span class="tag">Translation &amp; Transcription</span>
+          <span class="tag">Research &amp; Fact-Checking</span>
+          <span class="tag">Search Relevance Assessment</span>
+          <span class="tag">Remote Collaboration</span>
+        </div>
+      </div>
+      <div class="spec-card">
+        <h4>Data Annotation Skills</h4>
+        <div class="tag-row">
+          <span class="tag">Text Classification &amp; Labelling</span>
+          <span class="tag">Sentiment &amp; Intent Tagging</span>
+          <span class="tag">Named Entity Recognition (NER)</span>
+          <span class="tag">Dataset Quality Review</span>
+          <span class="tag">Guideline-Based Assessment</span>
+          <span class="tag">Pairwise Comparison Tasks</span>
+          <span class="tag">Human Feedback (RLHF)</span>
+          <span class="tag">Audio &amp; Speech Transcription</span>
+        </div>
+      </div>
+      <div class="spec-card">
+        <h4>Tools &amp; Platforms</h4>
+        <div class="tag-row">
+          <span class="tag">Microsoft Office Suite</span>
+          <span class="tag">Google Workspace</span>
+          <span class="tag">Excel (Advanced)</span>
+          <span class="tag">Crowdsourcing Platforms</span>
+          <span class="tag">Annotation Platforms</span>
+          <span class="tag">Zoom / Teams / Slack</span>
+        </div>
+      </div>
       <div class="spec-card">
         <h4>Network Infrastructure</h4>
         <div class="tag-row">
@@ -523,19 +997,27 @@
           <span class="tag">Huawei</span>
           <span class="tag">Zywall firewalls</span>
           <span class="tag">Fiber optic systems</span>
-          <span class="tag">Microwave radios</span>
+          <span class="tag">Microwave radios (Harris)</span>
           <span class="tag">GSM / CDMA</span>
           <span class="tag">TDMA systems</span>
+          <span class="tag">Cat6a structured cabling</span>
         </div>
       </div>
       <div class="spec-card">
-        <h4>System Administration</h4>
+        <h4>IT Systems &amp; Troubleshooting</h4>
         <div class="tag-row">
           <span class="tag">PXE imaging</span>
+          <span class="tag">SCCM / MECM</span>
+          <span class="tag">USMT migration</span>
+          <span class="tag">ServiceNow / ITSM</span>
+          <span class="tag">Preventive maintenance scheduling</span>
           <span class="tag">Desktop/laptop config</span>
-          <span class="tag">User data migration</span>
+          <span class="tag">Zebra label printers</span>
+          <span class="tag">Static IP / print servers</span>
           <span class="tag">Asset management</span>
-          <span class="tag">System deployment</span>
+          <span class="tag">Network diagnostics</span>
+          <span class="tag">RF alignment</span>
+          <span class="tag">GPS site surveying</span>
         </div>
       </div>
       <div class="spec-card">
@@ -548,30 +1030,14 @@
         </div>
       </div>
       <div class="spec-card">
-        <h4>Quality Assurance</h4>
-        <div class="tag-row">
-          <span class="tag">Performance evaluation</span>
-          <span class="tag">QA methodologies</span>
-          <span class="tag">Human-centered validation</span>
-          <span class="tag">Process optimization</span>
-        </div>
-      </div>
-      <div class="spec-card">
-        <h4>Troubleshooting</h4>
-        <div class="tag-row">
-          <span class="tag">Network diagnostics</span>
-          <span class="tag">Fault resolution</span>
-          <span class="tag">Microwave analysis</span>
-          <span class="tag">RF alignment</span>
-          <span class="tag">GPS site surveying</span>
-        </div>
-      </div>
-      <div class="spec-card">
         <h4>Professional Training</h4>
         <div class="tag-row">
+          <span class="tag">Data Annotation &amp; Labelling Fundamentals</span>
+          <span class="tag">Evaluation &amp; Human Feedback Methodology</span>
+          <span class="tag">QA Principles &amp; Practice</span>
+          <span class="tag">Google Digital Garage Cert.</span>
           <span class="tag">Harris ClearBurst™</span>
-          <span class="tag">Megastar radios</span>
-          <span class="tag">Microstar radios</span>
+          <span class="tag">Megastar / Microstar radios</span>
         </div>
       </div>
     </div>
@@ -580,7 +1046,7 @@
 
 <section id="credentials">
   <div class="wrap">
-    <div class="eyebrow">Route 03</div>
+    <div class="eyebrow">Route 04</div>
     <h2 class="sec-title">Education &amp; Recognition</h2>
 
     <div class="two-col">
@@ -588,7 +1054,7 @@
         <h4>Education &amp; Certifications</h4>
         <div class="cred">
           <div class="name">HND in Physics/Electronics</div>
-          <div class="meta">The Polytechnic, Ibadan · 2002</div>
+          <div class="meta">The Polytechnic, Ibadan · 2002 · Best Graduating Student</div>
         </div>
         <div class="cred">
           <div class="name">OND in Science Laboratory Technology</div>
@@ -623,12 +1089,27 @@
         </div>
       </div>
     </div>
+
+    <div class="early-career" style="margin-top:1px;">
+      <h4>Languages &amp; Key Strengths</h4>
+      <div class="tag-row" style="margin-bottom:16px;">
+        <span class="tag">English — Fluent / Professional</span>
+      </div>
+      <div class="tag-row">
+        <span class="tag">Exceptional Attention to Detail</span>
+        <span class="tag">Complex Problem-Solving</span>
+        <span class="tag">Team Leadership &amp; Mentoring</span>
+        <span class="tag">High-Volume Task Delivery</span>
+        <span class="tag">Strong Written Communication</span>
+        <span class="tag">Independent &amp; Reliable</span>
+      </div>
+    </div>
   </div>
 </section>
 
 <section id="verify">
   <div class="wrap">
-    <div class="eyebrow">Route 04</div>
+    <div class="eyebrow">Route 05</div>
     <h2 class="sec-title">Verify This Profile</h2>
     <p class="sec-sub">Every detail on this page is cross-checkable against the same identity: the same name, contact information and employment dates appear here, on LinkedIn, and on the original résumé below.</p>
 
@@ -646,6 +1127,10 @@
         <div class="cred">
           <div class="name">Current employer</div>
           <div class="meta">Raritan Pharmaceutical Company, East Brunswick, NJ — Desktop Support Technician since April 2018, per résumé and LinkedIn</div>
+        </div>
+        <div class="cred">
+          <div class="name">Work eligibility</div>
+          <div class="meta">Authorized to work in the USA · Newark, NJ resident · Available for remote work, immediate start</div>
         </div>
       </div>
       <div class="col-pane">
@@ -672,7 +1157,7 @@
     <div class="contact-panel">
       <div>
         <h2>Let's connect the next link.</h2>
-        <p>Open to IT, network engineering and infrastructure support roles across telecom and enterprise environments.</p>
+        <p>Available now and remote-ready for data annotation, QA/evaluation, and IT infrastructure roles.</p>
       </div>
       <div class="contact-links">
         <a href="mailto:Oyeniranoludayo103@gmail.com"><span class="k">@</span> Oyeniranoludayo103@gmail.com</a>
